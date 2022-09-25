@@ -1,0 +1,381 @@
+<html>
+
+<head>
+  <title>Events</title>
+  <link href="./css/event_style.css" rel="stylesheet">
+  <link rel="icon" href="./images/icons/icon-mini.png" type="image/icon type">
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <!-- Custom Cursor END -->
+
+  <!-- Loader Should be Loaded at DOM including styling-->
+  <div id="loader-wrapper"
+    style="width: 100%;  height: 100%;  position: absolute;  top:0;  left:0;  background: radial-gradient(ellipse at bottom, #0c1116 0%, #161927 100%);  display: flex;  justify-content: center;  align-items: center;  transition: all 2s ease;  z-index: 1001;">
+    <div id="preloader"
+      style="background-image: url(&#34;data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' id='preloader' width='240px' height='120px' viewBox='0 0 240 120'%3E%3Cpath id='loop-normal' style='filter: drop-shadow(0px 3px 3px rgb(255, 0, 0)); fill: none; stroke: red; stroke-width: 12;' class='st1' d='M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5 L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z'%3E%3Canimate attributeName='stroke-dasharray' from='500, 50' to='450 50' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3Canimate attributeName='stroke-dashoffset' from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3C/path%3E%3Cpath id='loop-offset' style='display: none;' d='M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z'%3E%3C/path%3E%3Cpath id='socket' style='filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));fill:white;' d='M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z'%3E%3Canimate from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3CanimateMotion dur='2s' repeatCount='indefinite' rotate='auto' keyTimes='0;1' keySplines='0.42, 0.0, 0.58, 1.0'%3E%3Cmpath href='%23loop-offset' /%3E%3C/animateMotion%3E%3C/path%3E%3Cpath id='plug' style='filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));fill:white;' d='M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z'%3E%3Canimate from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3CanimateMotion dur='2s' rotate='auto' repeatCount='indefinite' keyTimes='0;1' keySplines='0.42, 0, 0.58, 1'%3E%3Cmpath href='%23loop-normal' /%3E%3C/animateMotion%3E%3C/path%3E%3C/svg%3E&#34;); position: absolute; width: 240px; height: 120px; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
+    </div>
+    <!-- &#39; as '    &#34; as "  -->
+    <div class="loading" style="position: absolute;  bottom: 60vh;  width: 100%;  text-align: center;">
+      <h1
+        style="filter: drop-shadow(0px 3px 3px rgb(254, 0, 0));  color: white;  font-family: 'Open Sans', sans-serif; text-transform: uppercase; text-decoration: none;">
+        Loading
+      </h1>
+    </div>
+  </div>
+  <!-- Loader END -->
+
+  <header>
+    <nav class="nav-bar">
+      <ul class="menu">
+        <li><a href="./">Home</a></li>
+        <li><a href="./aboutus">About us</a></li>
+      </ul>
+      <img src="./images/Eaxion.png" alt="" style="width: 14vw;height:12vh; position: absolute;left :45%;top: 1%;">
+      <button class="btn contact" onclick="location.href = './aboutus#contactus';">contact us</button>
+
+      <!-- Change View
+      <img id="change_view" alt="Change View" onclick="hideView()" src="./images/icons/menu.png"> -->
+    </nav>
+  </header>
+
+
+  <!--Animation-->
+  <section>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!-- <canvas id="canvas"></canvas> -->
+  </section>
+  <!--Animation-->
+
+
+
+
+
+  <!--Squeezed View START-->
+  <div class="container" id="card-view">
+    <div class="card first-explode"
+      onclick="document.getElementById('guidelines1').scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});">
+      <h3 class="title" style="font-family: l;" style="font-family: l;">Desert Drive</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <circle class="stroke" cx="60" cy="60" r="50" />
+          <image href="./images/icons/2.png" width="200" height="200" x="-30" y="-56" />
+        </svg>
+      </div>
+
+      <div class="sloga">
+        <p>-RUSH THE RIDE,TO THE PRIDE.</p>
+      </div>
+
+    </div>
+
+    <div class="card second-explode"
+      onclick="document.getElementById('guidelines2').scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});">
+      <h3 class="title" style="font-family: l;">Bamboozle</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <circle class="stroke" cx="60" cy="60" r="50" />
+          <image href="./images/icons/5.png" width="200" height="200" x="-20" y="-40" />
+        </svg>
+      </div>
+
+      <div class="sloga">
+        <p>-HOW MANY TABS CAN YOUR BRAIN OPEN ?</p>
+      </div>
+    </div>
+
+    <div class="card third-explode"
+      onclick="document.getElementById('guidelines3').scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});">
+      <h3 class="title" style="font-family: l;">Flummox</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <circle id="quiz" class="stroke" cx="60" cy="60" r="50" />
+          <image href="./images/icons/3.png" width="200" height="200" x="-20" y="-60" />
+        </svg>
+      </div>
+
+      <div class="sloga">
+        <p>-CONTROL, CHAOS, CONNECTIVITY.</p>
+      </div>
+    </div>
+
+    <div class="card fourth-explode"
+      onclick="document.getElementById('guidelines4').scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});">
+      <h3 class="title" style="font-family: l;">Lucid Circuits</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <circle class="stroke" cx="60" cy="60" r="50" />
+          <image href="./images/icons/1.png" width="200" height="200" x="-30" y="-50" />
+        </svg>
+      </div>
+
+      <div class="sloga">
+        <p>-ERROR RECTIFIED, OUTPUT AMPLIFIED.</p>
+      </div>
+
+    </div>
+
+    <div class="card fifth-explode"
+      onclick="document.getElementById('guidelines5').scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});">
+      <h3 class="title" style="font-family: l;">Noxious Idea</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+
+      <div class="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <circle id="noxious" class="stroke" cx="60" cy="60" r="50" />
+          <image style="z-index: 100;position:relative" href="./images/icons/4.png" width="150" height="150" x="-10"
+            y="-20" />
+        </svg>
+      </div>
+
+      <div class="sloga">
+        <p>-EMBRACE, EMBARK, ENCHANT.</p>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- Squeezed View END-->
+
+  <!--Scroll-Up-->
+  <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+  <a id="scroll-up" onclick="window.scrollTo(0,0);"><i class="fa fa-arrow-up centeri "></i></a>
+  <!--Scroll-Up-->
+
+  <!--Scroll anime START-->
+  <div class="text-container" id="first-text">
+    <p class="describe">The challenge is to build your own robot either wired
+      or wireless within the specified dimensions in order to achieve the maximum speed to beat other robots on the
+      given track and reach the finishing line in minimum time. The robot must run on the given racetrack. The bot with
+      maximum cumulative points will win the race.</p>
+    <p class="describe-contact">
+      For Further Details Contact : <i class="fa fa-whatsapp"></i> <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=917200833949&text=Hi, Just need help with the event Desert Drive on Eaxion">
+        7200833949</a>
+    </p>
+    <button class="btn skew describe-reg"
+      onclick="window.open('https://conoscenza2022.stjosephstechnology.ac.in/registration/registeroriginal.html','_blank'); ">REGISTRATION
+    </button>
+
+  </div>
+  <div class="mov-card animator_custom" id="first-explore">
+    <a href="./files/DESERT DRIVE.pdf" target="_blank" class="more-icon"><i class="fa fa-plus more-content"></i>
+      <p class="morer">More</p>
+    </a>
+    <h3 class="event-name">Desert Drive</h3>
+    <div class="barr">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="guidelines1" id="guidelines1">
+      <h3 class="Headinesa">GUIDELINES</h3>
+      <ul class="descrip">
+        <li>2-3 Members per team.</li>
+        <li>Person to finish track with least time wins.</li>
+        <li>Three touches allowed.</li>
+        <li>Judges decision will be final and binding.</li>
+      </ul>
+      <h3 class="Headinesa">DESIGN SPECS</h3>
+      <ul class="descrip">
+        <li>Weight : Less than 5 kg.</li>
+        <li>Dimension : 25cm x 25cm x 25cm (max).</li>
+        <li>Can be Wired or Wireless.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="text-container" id="second-text">
+    <p class="describe">To challenge the participants to talk on tech topic
+      provided on spot and respond to the intruders rapid fire questions.</p>
+    <p class="describe-contact">
+      For Further Details Contact : <i class="fa fa-whatsapp"></i> <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=918189958110&text=Hi, Just need help with the event Bamboozle on Eaxion">8189958110</a>
+    </p>
+    <button class="btn skew describe-reg"
+      onclick="window.open('https://conoscenza2022.stjosephstechnology.ac.in/registration/registeroriginal.html','_blank'); ">REGISTRATION
+    </button>
+  </div>
+
+  <div class="mov-card animator_custom" id="second-explore">
+    <a href="./files/BAMBOOZLE.pdf" target="_blank" class="more-icon"><i class="fa fa-plus more-content"></i>
+      <p class="morer">More</p>
+    </a>
+    <h3 class="event-name">Bamboozle</h3>
+    <div class="barr">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="guidelines2" id="guidelines2">
+      <h3 class="Headinesa">GUIDELINES</h3>
+      <ul class="descrip">
+        <li>Individual Event.</li>
+        <li>30 seconds Preparation time,</li>
+        <li>60 seconds Talk time.</li>
+        <li>Consist of two Rounds.</li>
+        <li>Judges decision will be final and binding.</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="text-container" id="third-text">
+    <p class="describe">As you unlock your knowledge at the speed of thoughts, the ramp of jest capture your knowledge,
+      All you wannable on the ladder aiming for the top prepare for an unplanned stop Quiz.</p>
+    <p class="describe-contact">
+      For Further Details Contact : <i class="fa fa-whatsapp"></i> <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=919092965855&text=Hi, Just need help with the event Flummox on Eaxion">9092965855</a>,
+      <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=918220943878&text=Hi, Just need help with the event Flummox on Eaxion">8220943878</a>
+    </p>
+    <button class="btn skew describe-reg"
+      onclick="window.open('https://conoscenza2022.stjosephstechnology.ac.in/registration/registeroriginal.html','_blank'); ">REGISTRATION
+    </button>
+  </div>
+
+  <div class="mov-card animator_custom" id="third-explore">
+    <a href="./files/FLUMMOX.pdf" target="_blank" class="more-icon"><i class="fa fa-plus more-content"></i>
+      <p class="morer">More</p>
+    </a>
+    <h3 class="event-name">Flummox</h3>
+    <div class="barr">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="guidelines3" id="guidelines3">
+      <h3 class="Headinesa">GUIDELINES</h3>
+      <ul class="descrip">
+        <li>Team of maximum 4 members.</li>
+        <li>Consist of two rounds.</li>
+        <li>hierarchy level elimination.</li>
+        <li>Judges decision will be final and binding.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="text-container" id="fourth-text">
+    <p class="describe">The event tests all of participants to find the
+      errors in the circuit and correct them to get the requited output.</p>
+    <p class="describe-contact">
+      For Further Details Contact : <i class="fa fa-whatsapp"></i> <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=919361557911&text=Hi, Just need help with the event Lucid Circuits on Eaxion">9361557911</a>
+    </p>
+    <button class="btn skew describe-reg"
+      onclick="window.open('https://conoscenza2022.stjosephstechnology.ac.in/registration/registeroriginal.html','_blank'); ">REGISTRATION
+    </button>
+  </div>
+
+  <div class="mov-card animator_custom" id="fourth-explore">
+    <a href="./files/LUCID CIRCUITS.pdf" target="_blank" class="more-icon"><i class="fa fa-plus more-content"></i>
+      <p class="morer">More</p>
+    </a>
+    <h3 class="event-name">Lucid Circuits</h3>
+    <div class="barr">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="guidelines4" id="guidelines4">
+      <h3 class="Headinesa">GUIDELINES</h3>
+      <ul class="descrip">
+        <li>2-3 Participants per team.</li>
+        <li>Consist of three rounds.</li>
+        <li>Time limit is strictly maintaned.</li>
+        <li>Judges decision will be final and binding.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="text-container" id="fifth-text">
+    <p class="describe">Everything begins with an ideal We seated this
+      platform to express your idea to the problem which you found Noxious to the society, come out with your
+      presentation to validate your idea.</p>
+    <p class="describe-contact">
+      For Further Details Contact : <i class="fa fa-whatsapp"></i> <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=916382261727&text=Hi, Just need help with the event Noxious Idea on Eaxion">6382261727</a>,
+      <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=919942592674&text=Hi, Just need help with the event Noxious Idea on Eaxion">9942592674</a>
+    </p>
+    <button class="btn skew describe-reg"
+      onclick="window.open('https://conoscenza2022.stjosephstechnology.ac.in/registration/registeroriginal.html','_blank'); ">REGISTRATION
+    </button>
+  </div>
+
+  <div class="mov-card animator_custom" id="fifth-explore">
+    <a href="./files/NOXIOUS IDEA.pdf" target="_blank" class="more-icon"><i class="fa fa-plus more-content"></i>
+      <p class="morer">More</p>
+    </a>
+    <h3 class="event-name">Noxious Idea</h3>
+    <div class="barr">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="guidelines5" id="guidelines5">
+      <h3 class="Headinesa">THEME</h3>
+      <ul class="descrip">
+        <li>AI / IOT / ML / CYBER SECURITY / TECH TOPICS</li>
+      </ul>
+      <h3>GUIDELINES</h3>
+      <ul class="descrip">
+        <li>2-3 Members per team.</li>
+        <li>Consist of two rounds.</li>
+        <li>Judges decision will be final and binding.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <!--Scroll anime END-->
+  <p>
+
+    <!--Scroll anime END-->
+
+
+
+    <!--Extras START-->
+    <!--Font Aweosme cdn-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7bea183d4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <script src="./js/event_react.js"></script>
+
+    <!--Extras END-->
+</body>
+
+</html>

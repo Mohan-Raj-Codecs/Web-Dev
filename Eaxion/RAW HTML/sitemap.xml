@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.eaxion-ece.tech/</loc>
+  <lastmod>2022-09-09T09:27:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.eaxion-ece.tech/aboutus</loc>
+  <lastmod>2022-09-09T09:27:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.eaxion-ece.tech/events</loc>
+  <lastmod>2022-09-09T09:27:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.eaxion-ece.tech/files/DESERT%20DRIVE.pdf</loc>
+  <lastmod>2022-09-02T05:26:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eaxion-ece.tech/files/BAMBOOZLE.pdf</loc>
+  <lastmod>2022-09-02T05:26:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eaxion-ece.tech/files/FLUMMOX.pdf</loc>
+  <lastmod>2022-09-02T05:26:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eaxion-ece.tech/files/LUCID%20CIRCUITS.pdf</loc>
+  <lastmod>2022-09-02T05:26:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.eaxion-ece.tech/files/NOXIOUS%20IDEA.pdf</loc>
+  <lastmod>2022-09-02T05:26:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

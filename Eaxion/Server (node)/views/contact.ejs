@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Animate On Scroll CSS tag-->
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="icon" href="./images/icons/icon-mini.png" type="image/icon type">
+  <title>About Us</title>
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <!-- Custom Cursor END -->
+
+  <!-- Loader Should be Loaded at DOM including styling-->
+  <div id="loader-wrapper"
+    style="width: 100%;  height: 100%;  position: absolute;  top:0;  left:0;  background: radial-gradient(ellipse at bottom, #0c1116 0%, #161927 100%);  display: flex;  justify-content: center;  align-items: center;  transition: all 2s ease;  z-index: 1001;">
+    <div id="preloader"
+      style="background-image: url(&#34;data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' id='preloader' width='240px' height='120px' viewBox='0 0 240 120'%3E%3Cpath id='loop-normal' style='filter: drop-shadow(0px 3px 3px rgb(255, 0, 0)); fill: none; stroke: red; stroke-width: 12;' class='st1' d='M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5 L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z'%3E%3Canimate attributeName='stroke-dasharray' from='500, 50' to='450 50' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3Canimate attributeName='stroke-dashoffset' from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3C/path%3E%3Cpath id='loop-offset' style='display: none;' d='M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z'%3E%3C/path%3E%3Cpath id='socket' style='filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));fill:white;' d='M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z'%3E%3Canimate from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3CanimateMotion dur='2s' repeatCount='indefinite' rotate='auto' keyTimes='0;1' keySplines='0.42, 0.0, 0.58, 1.0'%3E%3Cmpath href='%23loop-offset' /%3E%3C/animateMotion%3E%3C/path%3E%3Cpath id='plug' style='filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));fill:white;' d='M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z'%3E%3Canimate from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3CanimateMotion dur='2s' rotate='auto' repeatCount='indefinite' keyTimes='0;1' keySplines='0.42, 0, 0.58, 1'%3E%3Cmpath href='%23loop-normal' /%3E%3C/animateMotion%3E%3C/path%3E%3C/svg%3E&#34;); position: absolute; width: 240px; height: 120px; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
+    </div>
+    <!-- &#39; as '    &#34; as "  -->
+    <div class="loading" style="position: absolute;  bottom: 60vh;  width: 100%;  text-align: center;">
+      <h1
+        style="filter: drop-shadow(0px 3px 3px rgb(254, 0, 0));  color: white;  font-family: 'Open Sans', sans-serif; text-transform: uppercase; text-decoration: none;">
+        Loading
+      </h1>
+    </div>
+  </div>
+  <!-- Loader END -->
+
+  
+
+  <!--Nav-Bar-->
+  <header>
+    <nav class="nav-bar">
+      <ul class="menu">
+        <li><a href="./">Home</a></li>
+        <li><a href="./aboutus">About us</a></li>
+        <li><a href="./events">Events</a></li>
+      </ul>
+      <img src="./images/clg-logo.png" style="width: 6%;height:6%;">
+      <div class="logo" style="text-align: center;">
+        <!-- shri26 -->
+        <h6 style="font-style: italic;"><a href="https://www.stjosephstechnology.ac.in/web/index.html">We Make
+            You Shine</a></h6>
+        <h5 id="clg-name"><a href="https://www.stjosephstechnology.ac.in/web/index.html">St. JOSEPH'S INSTITUTE OF
+            TECHNOLOGY</a></h5>
+        <h6><a style="text-align: center;font-family:'Arial Black', 'Arial Bold',Gadget, sans-seri;font-size: 0.9vw;"
+            href="https://www.stjosephstechnology.ac.in/web/index.html">(An Autonomous Institution)</a></h6>
+        <h6><a style="text-align: center;font-family:'Arial Black';font-size: 1vw;"
+            href="https://www.stjosephstechnology.ac.in/web/index.html">St. Joseph's Group of
+            Institutions</a></h6>
+        <h6><a style="text-align: center;font-family:'Arial Black', Gadget, sans-seri;"
+            href="https://www.stjosephstechnology.ac.in/web/index.html">OMR, Chennai - 600019</a></h6>
+      </div>
+      <img src="./images/years.png" style="width: 6%;height:6%;">
+      <button class="btn contact" onclick="location.href = './aboutus#contactus';">contact
+        us</button>
+    </nav>
+  </header>
+
+  <!--Nav-Bar-->
+
+  <!--Scroll-Up-->
+  <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+  <a id="scroll-up" onclick="window.scrollTo(0,0);"><i class="fa fa-arrow-up centeri "></i></a>
+  <!--Scroll-Up-->
+
+  <div>
+    <div class="about-title">
+      <img src="./images/Eaxion.png" class="about-image">
+
+
+      <div class="text-container" id="first-text">
+        <p id="inside-first">
+          E-AXION is a National Level Technical Symposium conducted by the Electronics and Communication Engineering
+          Department of St. Joseph's Institute of Technology. The reputation of this symposium prolongs from 2011. Take
+          this opportunity to stimulate and showcase your expertise to attain exposure.
+        </p>
+        <div class="mov-card animator_custom" id="first-explore">
+          <!-- Slide show Event -->
+          <div class="slideshow-container">
+
+            <div class="mySlides_event fade">
+              <img src="./images/event_images/1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides_event fade">
+              <img src="./images/event_images/2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides_event fade">
+              <img src="./images/event_images/3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides_event fade">
+              <img src="./images/event_images/4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides_event fade">
+              <img src="./images/event_images/5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides_event fade">
+              <img src="./images/event_images/6.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides_event fade">
+              <img src="./images/event_images/7.jpg" style="width:100%">
+            </div>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot_event"></span>
+            <span class="dot_event"></span>
+            <span class="dot_event"></span>
+            <span class="dot_event"></span>
+            <span class="dot_event"></span>
+            <span class="dot_event"></span>
+            <span class="dot_event"></span>
+          </div>
+          <!-- Slide Show Event END-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+  <div>
+
+    <div class="text-container" id="second-text">
+      <p id="inside-second">
+        St. Joseph's Institute of Technology is a higher education institution in OMR, Chennai, India, established in
+        the
+        year 2011, with 6 UG courses (B.E. - CSE, ECE, EEE & Mech. Engg., B.Tech. IT & B.Tech Artificial Intelligence
+        and
+        Data Science is offered from the year 2021.
+        <br>
+        Our college is affiliated to the Anna University and approved by AICTE. The courses offered from the inception
+        (B.E. - CSE, ECE & Mech. Engg. & B.Tech. IT) have been accredited by NBA in 2017 in the shortest span of 6 years
+        since inception, which ascertains our quality.
+      </p>
+      <div id="about_college"><a href="https://www.stjosephstechnology.ac.in/web/index.html">About St.Joseph's </a>
+      </div>
+
+      <div class="mov-card animator_custom" id="second-explore">
+
+        <!-- Slide Show College -->
+
+        <div class="slideshow-container">
+
+          <div class="mySlides_college fade">
+            <img src="./images/clg_images/1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides_college fade">
+            <img src="./images/clg_images/2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides_college fade">
+            <img src="./images/clg_images/3.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides_college fade">
+            <img src="./images/clg_images/4.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides_college fade">
+            <img src="./images/clg_images/5.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides_college fade">
+            <img src="./images/clg_images/6.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides_college fade">
+            <img src="./images/clg_images/7.jpg" style="width:100%">
+          </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot_college"></span>
+          <span class="dot_college"></span>
+          <span class="dot_college"></span>
+          <span class="dot_college"></span>
+          <span class="dot_college"></span>
+          <span class="dot_college"></span>
+          <span class="dot_college"></span>
+        </div>
+        <!-- Slide Show College END-->
+      </div>
+    </div>
+  </div>
+
+  <div class="ins-container gradient" id="instruction" data-aos="fade-up" data-aos-duration="1000">
+    <ul class="instruction-bullets" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <li>All participants should bring their Registration
+        Slip and College ID card or Bonafide certificate
+        with them.</li>
+      <li>Registration will closes by 8.30AM.
+        On-Spot Registration will not be allowed.
+        College Buses are available for all routes in and
+        around Chennai.</li>
+      <li>Participants are permitted to enter the campus
+        only with Formal Dress code.
+      </li>
+      <li>Proper decorum must be maintained in
+        accordance with the college rules while in the
+        college campus.</li>
+      <li>Mobile Phones are not allowed inside the
+        College Campus.</li>
+      <li>Breakfast and Lunch will be provided by the
+        college.</li>
+      <li>Judge's decision will be final and binding.</li>
+    </ul>
+    <br>
+    <div class="bus-bullets">
+      <h1 class="bus-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">MTC Bus Routes to the
+        college</h1>
+      <ul class="bus-point" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <li>Stop: St. Joseph's Institute of Technology<br></li>
+        <li>From ADYAR : 521H, 102<br></li>
+        <li>From TAMBARAM : 99, 95<br></li>
+        <li>From SAIDAPET : 19B,19<br></li>
+        <li>From KOYEMBEDU : 570, 570S, 221</li>
+      </ul>
+    </div>
+    <div id="inst" data-aos="fade-up" data-aos-duration="1000">General Instructions</div>
+  </div>
+
+
+
+  <div class="department">
+    <div class="about-card animator_custom" id="about-depart">
+      <div>
+        <h3 class="title" style="font-family: l;">About department</h3>
+        <div class="barr">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+      </div>
+      <div class="about-depart-text">
+        <marquee direction="up" height="100%" scrollamount="4">
+          <ul>
+            <li>
+              The Department of ECE endeavors to continue its
+              accomplishment from the year 2011 for Under
+              Graduation course (B.E.) with initial intake of 60.</li><br>
+            <li>With
+              the remarkable growth the intake augmented to 120 in
+              the year 2013 and to 180 from the year 2018.</li><br>
+            <li> The Department is permanently affiliated to Anna
+              University.</li><br>
+            <li>It is accredited by the National Board of
+              Accreditation since 2017 for its excellence.</li><br>
+            <li> The Department provides comprehensive knowledge to
+              design, develop, and investigate the various Electronic
+              equipment�s and Communication Systems.</li><br>
+            <li> The Department has prestigious student chapter of IEEE,
+              IETE, ISTE and ERC Club under which many activities
+              are conducted.</li>
+          </ul>
+
+        </marquee>
+      </div>
+    </div>
+
+    <div class="about-card animator_custom" id="vision-depart">
+
+      <h3 class="title" style="font-family: l;">Vision</h3>
+      <p id="about-vision-text">
+        To come forth as an eminent department in the field of
+        electronics and communication engineering, research
+        for providing ethical resource persons to serve the
+        industry and society with technical excellence.
+
+      </p>
+      <div class="barr">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+    </div>
+
+    <div class="about-card animator_custom" id="mission-depart">
+      <h3 class="title" style="font-family: l;">Mission</h3>
+      <div class="barr">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div id="about-mission-text">
+        <marquee direction="up" height="100%" scrollamount="4">
+          <ul>
+            <li>To provide the best resources in teaching, learning
+              and other educational activities which will train the
+              student to attain his or her fullest potential in the
+              field of Electronics and Communication
+              Engineering.</li><br>
+            <li>To inculcate technical knowledge, leadership
+              qualities, team work and ethical practices in
+              students so as to meet the expectations of the
+              industry as well as the society.</li><br>
+            <li>To organize exclusive courses, conferences,
+              seminars on the current technological developments
+              which will be an added benefit for bringing out the
+              various talents in the students and faculties.</li><br>
+            <li>To sustain connectivity with industries to get on par
+              with the recent technologies and research.</li><br>
+            <li>To foster career improvement through placements,
+              higher education and entrepreneur skills by
+              continuous training& guidance.</li><br>
+          </ul>
+        </marquee>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="some">
+    <div class="fig1">
+      <figure class="snip1344"><img src="./images/profile/babu.jpg" alt="profile-sample1" class="background" /><img
+          src="./images/profile/babu.jpg" alt="profile-sample1" class="profile" />
+        <h3>Dr.B.Babu Manoharan<span>M.A.,M.B.A.,Ph.D.</span><span style="font-style:italic;">Chairman</span></h3>
+      </figure>
+    </div>
+    <div class="fig2">
+      <figure class="snip1344"><img src="./images/profile/jessi.jpg" alt="profile-sample7" class="background" /><img
+          src="./images/profile/jessi.jpg" alt="profile-sample7" class="profile" />
+        <h3>Mrs.B.Jesse Priya<span>M.Com.</span><span style="font-style:italic;">Managing Director</span></h3>
+      </figure>
+    </div>
+    <div class="fig3">
+      <figure class="snip1344 "><img src="./images/profile/shasi.jpg" alt="profile-sample6" class="background" /><img
+          src="./images/profile/shasi.jpg" alt="profile-sample6" class="profile" />
+        <h3>Mr.B.Shashi Sekar<span>M.Sc.,INTL.Business.</span><span style="font-style:italic;">Executive Director</span>
+        </h3>
+      </figure>
+    </div>
+    <div class="fig4">
+      <figure class="snip1344 "><img src="./images/profile/ravi.jpg" alt="profile-sample6" class="background" /><img
+          src="./images/profile/ravi.jpg" alt="profile-sample6" class="profile" />
+        <h3>Dr.P.Ravichandran<span>M.Tech.,Ph.D.</span><span style="font-style:italic;">Principal</span></h3>
+      </figure>
+    </div>
+  </div>
+
+
+  <div class="hod" data-aos="fade-up" data-aos-duration="1000" id="contactus">
+    <div class="ins-container gradient" style="color: white;" id="hod">
+
+      <div class="flex-boxi">
+        <div style="width: 50%;text-align: center;margin-left: 0%;margin-top: 7%;">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Head Of Department<br></h1>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="head-gap">
+            Dr. C. Gnana Kousalya M.E.,Ph.D.<br>
+            Professor & Head (Staff & Students Affairs)
+          </div>
+        </div>
+        <div style="width: 50%;text-align: center;margin-left: 20%;margin-top: 7%;">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Lab Affairs <br></h1>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="head-gap">
+            Dr. G. Rohini M.E.,Ph.D.<br>
+            Professor & Head (Lab Affairs)
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-boxi">
+        <div style="width: 50%;text-align: center;margin-top:10%;margin-left: 0%;">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Staff Coordinator</h1>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="head-gap">
+            1. Mr. D. Suresh M.E., (Ph.D.)<br>
+            Assistant Professor, ECE<br>
+            Mobile No: <a href="tel:9884877875">9884877875</a><br><br>
+            2. Mrs. G. Akilandeswary M.E., (Ph.D.)<br>
+            Assistant Professor, ECE<br>
+            Mobile No: <a href="tel:9884839917">9884839917</a><br>
+          </div>
+        </div>
+
+        <div style="width: 50%;text-align: center;margin-top:10%;margin-left: 20%;">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Student Coordinator</h1>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="head-gap">
+            1. Charulatha V <br><br>
+            2. Madhavan PB (<a href="tel:9884839917">8189958110</a>) <br><br>
+            3. Swaminathan MG (<a href="tel:9884839917">6382261727</a>) <br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Faisa Footer START-->
+  <section class="contact-footer faisal">
+    <div class="container">
+      <div class="contact-info">
+        <div class="box">
+          <div class="icon">
+            <ion-icon name="location"></ion-icon>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="text">
+            <h3>Address</h3>
+            <p>Old Mamallapuram Road, Semmancheri, <br> Chennai, Tamil Nadu<br> 600119</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <ion-icon name="call"></ion-icon>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="text">
+            <h3>Phone</h3>
+
+            <p><a href="tel:8189958110">+91 8189958110</a></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <ion-icon name="mail"></ion-icon>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="text">
+            <h3>Email</h3>
+            <p><a href="mailto:eaxion2022@gmail.com"> eaxion2022@gmail.com </a></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="text">
+            <h3>Instagram</h3>
+            <p><a target="_blank" href="https://www.instagram.com/eaxion2k22/"> eaxion2k22 </a></p>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="contact-form">
+        <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
+            marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1944.79526466484!2d80.2183527!3d12.8697029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525bbb618d3ea9%3A0x90b3767be093efaa!2sSt.Joseph&#39;s%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1662126044007!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade "><a href="https://www.gps.ie/sport-gps/">fitness
+              tracker</a></iframe></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--Faisa Footer END-->
+
+
+
+  <!--Font Aweosme cdn-->
+  <script src="https://kit.fontawesome.com/e7bea183d4.js" crossorigin="anonymous"></script>
+  <!--AAnimate On Scroll Script tag-->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--IONICICON START-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!---IONICON END-->
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="./js/contact.js"></script>
+</body>
+
+</html>

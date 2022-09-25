@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icons/icon-mini.png" type="image/icon type">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/mobile_style.css">
+    <!--AOS ANIMATE CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Clock -->
+    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+    <title>Eaxion</title>
+</head>
+
+<body>
+    <!-- Loader Should be Loaded at DOM including styling-->
+    <div id="loader-wrapper"
+        style="width: 100%;  height: 100%;  position: absolute;  top:0;  left:0;  background: radial-gradient(ellipse at bottom, #0c1116 0%, #161927 100%);  display: flex;  justify-content: center;  align-items: center;  transition: all 2s ease;  z-index: 1001;">
+        <div id="preloader"
+            style="background-image: url(&#34;data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' id='preloader' width='240px' height='120px' viewBox='0 0 240 120'%3E%3Cpath id='loop-normal' style='filter: drop-shadow(0px 3px 3px rgb(255, 0, 0)); fill: none; stroke: red; stroke-width: 12;' class='st1' d='M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5 L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z'%3E%3Canimate attributeName='stroke-dasharray' from='500, 50' to='450 50' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3Canimate attributeName='stroke-dashoffset' from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3C/path%3E%3Cpath id='loop-offset' style='display: none;' d='M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z'%3E%3C/path%3E%3Cpath id='socket' style='filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));fill:white;' d='M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z'%3E%3Canimate from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3CanimateMotion dur='2s' repeatCount='indefinite' rotate='auto' keyTimes='0;1' keySplines='0.42, 0.0, 0.58, 1.0'%3E%3Cmpath href='%23loop-offset' /%3E%3C/animateMotion%3E%3C/path%3E%3Cpath id='plug' style='filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));fill:white;' d='M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z'%3E%3Canimate from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3CanimateMotion dur='2s' rotate='auto' repeatCount='indefinite' keyTimes='0;1' keySplines='0.42, 0, 0.58, 1'%3E%3Cmpath href='%23loop-normal' /%3E%3C/animateMotion%3E%3C/path%3E%3C/svg%3E&#34;); position: absolute; width: 240px; height: 120px; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
+        </div>
+        <!-- &#39; as '    &#34; as "  -->
+        <div class="loading" style="position: absolute;  bottom: 60vh;  width: 100%;  text-align: center;">
+            <h1
+                style="filter: drop-shadow(0px 3px 3px rgb(254, 0, 0));  color: white;  font-family: 'Open Sans', sans-serif; text-transform: uppercase; text-decoration: none;">
+                Loading
+            </h1>
+        </div>
+    </div>
+    <!-- Loader END -->
+
+    <div class="topbar">
+        <img class="clg-logo" src="images/clg-logo.png">
+        <img class="clg-year" src="./images/years.png">
+        <div class="logo">
+            <!-- shri26 -->
+            <h6 style="font-style: italic;">We Make You Shine</h6>
+            <h5 id="clg-name">St. JOSEPH'S INSTITUTE OF TECHNOLOGY</h5>
+            <h6>(An Autonomous Institution)</h6>
+            <h6>OMR, Chennai - 600019</h6>
+        </div>
+
+
+    </div>
+
+    <div class="eaxion-logo" data-aos="fade-up" data-aos-duration="1000">
+        <div class="side-two">
+            <div class="circle">
+                <!-- <img style="height: 100px; width: 100px" src=""> -->
+                <img src="./images/Eaxion.png" alt="">
+
+                <!-- <img style="height: 100px; width: 100px" src=""> -->
+            </div>
+        </div>
+    </div>
+    <div class="button-flex" data-aos="fade-up" data-aos-duration="1000">
+        <button class="custom-btn" onclick="location.href = '#events';">Event Details</button>
+        <button class="custom-btn" onclick="location.href = '#contacto';">Contact us</button>
+        <button class="custom-btn"
+            onclick="window.open('https://conoscenza2022.stjosephstechnology.ac.in/registration/registeroriginal.html','_blank'); ">Registration</button>
+
+    </div>
+    <!-- Clock -->
+    <div style="margin-top: 10%;" id="clock_beat">
+        <div style="text-align: center;color: white;font-size: 200%;">Still</div>
+        <a href="#" class="countdown-timer countdown-active" data-style="circles" data-timezone="Asia/Kolkata"
+            data-textcolor="#ffffff" data-date="2022-09-17 00:00" data-background="#ff0000" data-digitscolor="#ffffff"
+            data-unitscolor="#ffffff"
+            style="position: relative; overflow: hidden; display: inline-block; width: 100%; height: 124px;"
+            id="time_countdown_590769"><iframe
+                src="https://logwork.com/widget/countdown/?text=%20&amp;timezone=Asia%2FKolkata&amp;width=&amp;style=circles&amp;uid=590769&amp;loc=https://logwork.com/countdown-timer&amp;language=&amp;textcolor=%23ffffff&amp;background=%23ff0000&amp;date=2022-09-17%2000%3A00&amp;digitscolor=%23ffffff&amp;unitscolor=%23ffffff&amp;url=https://localhost/"
+                id="countdown_iframe_590769" scrolling="no" allowtransparency="true" frameborder="0"
+                style="width: 100%; height: 100%; border: none; margin: 0px; visibility: visible;"></iframe>
+            <div id="ovd_590769"
+                style="width: 380px; height: 130px; position: absolute; left: 0px; top: 0px; opacity: 0;">
+            </div>
+        </a>
+        <div style="text-align: center;color: white;font-size: 200%;font-size: 200%;">To Go</div>
+    </div>
+    <!-- Clock END -->
+
+
+    <!--PRIZE POOL-->
+
+    <div style="margin:0 auto;text-align: center; margin-top:10%;" data-aos="fade-up" data-aos-duration="1000">
+        <img style="width:50%" src="./images/gift.png" alt="">
+    </div>
+
+    <!-- ABOUT-US PAGE-->
+    <div class="about-us">
+        <h2 data-aos="fade-up" data-aos-duration="1000" style="color:white; text-align: center; margin-top:20%;">ABOUT
+            US</h2>
+        <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <img src="" alt="">
+        </div>
+        <div>
+            <h3 style="color:white;text-align: center; margin-top: 5%;" data-aos="fade-up" data-aos-duration="1000">
+                E-AXION</h3>
+            <p style="color:white;text-align: center; margin: 10%;" data-aos="fade-up" data-aos-duration="1000">E-AXION
+                is a National Level Technical Symposium conducted by the Electronics
+                and Communication Engineering Department of St. Joseph's Institute of Technology. The reputation of
+                this symposium prolongs from 2011. Take this opportunity to stimulate and showcase your expertise to
+                attain exposure.</p>
+        </div>
+    </div>
+
+
+
+    <!--EVENTS PAGE-->
+
+    <h2 style="color:white; text-align: center; margin-top:20%;" data-aos="fade-up" data-aos-duration="1000">EVENTS</h2>
+    <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+    <h3 style="color:white;text-align: center; margin-top: 5%;"></h3>
+
+    <div class="events" id="events">
+
+        <div class="container">
+            <div class="box" data-aos="fade-up" data-aos-duration="1000">
+                <span></span>
+                <div class="content">
+                    <h2 style="text-align:center; font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">DESERT
+                        DRIVE</h2>
+                    <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+                    <br>
+                    <p data-aos="fade-up" data-aos-duration="1000">The challenge is to build
+                        your own robot either wired or wireless within the specified dimensions in order to achieve
+                        the maximum speed to beat other robots on the given track and reach the finishing line in
+                        minimum time. The robot must run on the given racetrack. The bot with maximum cumulative
+                        points will win the race</p>
+                    <h3 style="font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">
+                        Guidelines</h3>
+                    <div style="border-bottom:2px solid white; width:40%; padding-top:3%;"></div> <br>
+
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ul style="font-weight:200;">
+                            <li>2 - 4 Members per team.</li> <br>
+                            <li>Person to finish track with least time wins.</li> <br>
+                            <li>Three touches allowed.</li> <br>
+                            <li>Judges decision will be final and binding</li> <br>
+                        </ul>
+                    </div>
+                    <h3 style="font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">
+                        Design Specs</h3>
+                    <div style="border-bottom:2px solid white; width:40%; padding-top:3%;"></div> <br>
+
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ul style="font-weight:200;">
+                            <li>Weight : Less than 5 kg.</li> <br>
+                            <li>Dimensions : 25cm x 25cm x 25cm (max).</li> <br>
+                            <li>Can be wired or wireles.s</li> <br>
+                        </ul>
+                    </div>
+                    <a target="_blank" href="./files/DESERT DRIVE.pdf" style="margin-left: 25%; color:white;"
+                        data-aos="fade-up" data-aos-duration="1000">Read More</a>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1000">
+                <span></span>
+                <div class="content">
+                    <h2 style="text-align:center; font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">
+                        BAMBOOZLE</h2>
+                    <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+                    <br>
+                    <p data-aos="fade-up" data-aos-duration="1000">To challenge the
+                        participants to talk on tech topic provided on spot and respond to intruders rapid fire
+                        questions.</p>
+
+                    <h3 style="font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">
+                        Guidelines</h3>
+                    <div style="border-bottom:2px solid white; width:40%; padding-top:3%;"></div> <br>
+
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ul style="font-weight:200;">
+                            <li>Individual event.</li> <br>
+                            <li>60 seconds talk time.</li> <br>
+                            <li>Consist of two rounds.</li> <br>
+                            <li>Judges decision will be final and binding.</li> <br>
+                        </ul>
+                    </div>
+                    <a target="_blank" href="./files/BAMBOOZLE.pdf" style="margin-left:25%; color:white;"
+                        data-aos="fade-up" data-aos-duration="1000">Read
+                        More</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2 style="text-align:center; font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">FLUMMOX
+                    </h2>
+                    <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+                    <br>
+                    <p data-aos="fade-up" data-aos-duration="1000">As you unlock your knowlege
+                        at the speed of thoughts, the ramp of jest capture your knowledge, All you wannable on the
+                        ladder aiming for the top prepare for an unplanned stop quiz. </p>
+                    <h3 style="font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">
+                        Guidelines</h3>
+                    <div style="border-bottom:2px solid white; width:40%; padding-top:3%;"></div> <br>
+
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ul style="font-weight:200;">
+                            <li>Team of maximum 4 members.</li> <br>
+                            <li>Consist of two rounds.</li> <br>
+                            <li>Hierarchy level elimination. </li> <br>
+                            <li>Judges decision will be final and binding.</li> <br>
+                        </ul>
+                    </div>
+
+                    <a target="_blank" href="./files/FLUMMOX.pdf" style="margin-left:25%; color:white;"
+                        data-aos="fade-up" data-aos-duration="1000">Read More</a>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1000">
+                <span></span>
+                <div class="content">
+                    <h2 style="text-align:center; font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">LUCID
+                        CIRCUITS</h2>
+                    <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+                    <br>
+                    <p data-aos="fade-up" data-aos-duration="1000">The event tests all of
+                        participants to find the errors in the circuit and correct them to get the requited output.
+                    </p>
+                    <h3 style="font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">
+                        Guidelines</h3>
+                    <div style="border-bottom:2px solid white; width:40%; padding-top:3%;"></div> <br>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ul style="font-weight:200;">
+                            <li>2-3 Participants per team.</li> <br>
+                            <li>Consist of three rounds.</li> <br>
+                            <li>Time limit is strictly maintaned.</li> <br>
+                            <li>Judges decision will be final and binding.</li> <br>
+                        </ul>
+                    </div>
+
+                    <a target="_blank" href="./files/LUCID CIRCUITS.pdf" style="margin-left:25%; color:white;"
+                        data-aos="fade-up" data-aos-duration="1000">Read More</a>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1000">
+                <span></span>
+                <div class="content">
+                    <h2 style="text-align:center; font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">NOXIOUS
+                        IDEA</h2>
+                    <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+                    <br>
+                    <p data-aos="fade-up" data-aos-duration="1000">Everything begins with an
+                        ideal We seated this platform to express your idea to the problem which you found Noxious to
+                        the society, come out with your presentation to validate your idea.</p>
+                    <h3 style="font-weight: 200;" data-aos="fade-up" data-aos-duration="1000">
+                        Guidelines</h3>
+                    <div style="border-bottom:2px solid white; width:40%; padding-top:3%;"></div> <br>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ul style="font-weight:200;">
+                            <li>2-3 Participants per team.</li> <br>
+                            <li>Consist of two rounds.</li> <br>
+                            <li>Judges decision will be final and binding.</li> <br>
+                        </ul>
+                    </div>
+                    <a target="_blank" href="./files/NOXIOUS IDEA.pdf" style="margin-left:25%; color:white;"
+                        data-aos="fade-up" data-aos-duration="1000">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--REGISTER NOW BUTTON-->
+    <div class="buttons" style="text-align:center;" data-aos="fade-up" data-aos-duration="1000">
+        <button class="btn-hover color-7" id="contacto"
+            onclick="window.open('https://conoscenza2022.stjosephstechnology.ac.in/registration/registeroriginal.html','_blank'); ">REGISTER
+            NOW</button>
+    </div>
+
+    <!--STAFF AND STUDENT COORDINATOR-->
+
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <div class="shadow glow" style="padding:10px;">
+            <h2 style="color:white; font-weight:200;text-align:center" data-aos="fade-up" data-aos-duration="1000">STAFF
+                COORDINATOR</h2>
+            <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+            <div style="color:white; text-align: center; margin-top: 10%" data-aos="fade-up" data-aos-duration="1000">
+
+                1. Mr.D.Suresh M.E.,(Ph.D.) <br> Assistant Professor, ECE <br> Mobile No: <a
+                    style="text-decoration:none; color:white;" href="tel:9884877875"> 9884877875</a> <br><br>
+                2. Mrs. G. Akilandeswary M.E., (Ph.D.) <br> Assistant Professor, ECE <br> Mobile No: <a
+                    style="text-decoration:none; color:white;" href="tel:9884839917"> 9884839917 </a><br> <br>
+
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <div class="shadow glow" style="padding:10px;">
+            <h2 style="color:white; font-weight:200;text-align:center" data-aos="fade-up" data-aos-duration="1000">
+                STUDENT COORDINATOR</h2>
+            <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+            <div style="color:white; text-align: center; margin-top: 10%" data-aos="fade-up" data-aos-duration="1000">
+
+                1. Charulatha V <br><br>
+                2. Madhavan PB <a style="text-decoration: none; color:white;"
+                    href="tel:8189958110">(8189958110)</a><br><br>
+                3. Swaminathan MG <a style="text-decoration: none; color:white;" href="tel:6382261727">(6382261727)</a>
+                <br><br>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br><br>
+
+
+    <!--GENERAL INSTRUCTION SECTION-->
+    <div class="general-inst">
+        <div class="box" data-aos="fade-up" data-aos-duration="1000">
+            <h2 style="color:white; font-weight:400; text-align:center; margin-top:3%;" data-aos="fade-up"
+                data-aos-duration="1000">GENERAL INSTRUCTION</h2>
+            <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+            <div style="color:white; padding:5px; margin-left:12px; margin-top:20px;">
+                <ul>
+                    <li>All participants should bring their Registration Slip and College ID card or Bonafide
+                        certificate with them.</li> <br>
+                    <li>Registration will closes by 8.30AM. On-Spot Registration will not be allowed. College Buses
+                        are available for all routes in and around Chennai.</li> <br>
+                    <li>Participants are permitted to enter the campus only with Formal Dress code.</li> <br>
+                    <li>Proper decorum must be maintained in accordance with the college rules while in the college
+                        campus.</li> <br>
+                    <li>Mobile Phones are not allowed inside the College Campus</li> <br>
+                    <li>Breakfast and Lunch will be provided by the college.</li> <br>
+                    <li>Judge's decision will be final and binding.</li> <br>
+
+                </ul>
+            </div>
+            <div style="color:white;">
+                <h2 style="font-weight:400; text-align:center; margin-top:3%;" data-aos="fade-up"
+                    data-aos-duration="1000">MTC Bus Routes to College</h2>
+                <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+                <div style=" padding:5px; margin-left:12px; margin-top:20px;" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <ul>
+                        <li>From ADYAR : 521H, 102</li> <br>
+                        <li>From TAMBARAM : 99, 95</li> <br>
+                        <li>From SAIDAPET : 19B,19</li> <br>
+                        <li>From KOYEMBEDU : 570, 570S, 221</li> <br>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <h2 style="color:white; font-weight:400; text-align:center; margin-top:3%;" data-aos="fade-up"
+            data-aos-duration="1000">CONTACT US</h2>
+        <div style="border-bottom:2px solid white; width:50%;margin:0 auto; padding-top:3%;"></div>
+        <br>
+        <br><br>
+        <div>
+            <div style="display:flex; justify-content:center;align-items:center;">
+                <div style="width:40%;">
+                    <div style="width:60px; height:60px; background-color:white;border-radius:100%; padding:10px;">
+                        <h2 data-aos="fade-up" data-aos-duration="1000"
+                            style="font-size:40px; text-align:center; margin-top:12%;">
+                            <ion-icon name="location"></ion-icon>
+                        </h2>
+
+                    </div>
+                </div>
+                <div style="width:40%;">
+                    <h3 style="color:white; text-align: center;color:#00bcd4;" data-aos="fade-up"
+                        data-aos-duration="1000">Address</h3>
+                    <br>
+                    <p data-aos="fade-up" data-aos-duration="1000" style="color:white; text-align: center;"> Old
+                        Mamallapuram Road, Semmancheri,
+                        Chennai, Tamil Nadu
+                        600119 </p>
+                </div>
+            </div>
+            <br>
+
+            <div style="display:flex; justify-content:center;align-items:center;">
+                <div style="width:40%;">
+                    <div style="width:60px; height:60px; background-color:white;border-radius:100%; padding:10px;">
+                        <h2 onclick="location.href = 'tel:8189958110';"
+                            style="font-size:40px; text-align:center; margin-top:12%;" data-aos="fade-up"
+                            data-aos-duration="1000">
+                            <ion-icon name="call"></ion-icon>
+                        </h2>
+
+                    </div>
+                </div>
+                <div style="width:40%;">
+                    <h3 style="color:white; text-align: center;color:#00bcd4;" data-aos="fade-up"
+                        data-aos-duration="1000">Phone</h3>
+                    <br>
+                    <a href="tel:8189958110" style="text-decoration: none;">
+                        <p style="color:white; text-align: center;" data-aos="fade-up" data-aos-duration="1000">+91
+                            8189958110</p>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div style="display:flex; justify-content:center;align-items:center;">
+                <div style="width:40%;">
+                    <div style="width:60px; height:60px; background-color:white;border-radius:100%; padding:10px;">
+                        <h2 onclick="location.href = 'mailto:eaxion2022@gmail.com';"
+                            style="font-size:40px; text-align:center; margin-top:12%;" data-aos="fade-up"
+                            data-aos-duration="1000">
+                            <ion-icon name="mail"></ion-icon>
+                        </h2>
+
+                    </div>
+                </div>
+                <div style="width:40%;">
+                    <h3 data-aos="fade-up" data-aos-duration="1000"
+                        style="color:white; text-align: center;color:#00bcd4;">Email</h3>
+                    <br>
+                    <p style="color:white; text-align: center; text-transform: lowercase;" data-aos="fade-up"
+                        data-aos-duration="1000"><a style="text-decoration: none; color:white;"
+                            href="mailto:eaxion2022@gmail.com">eaxion2022@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <div style="display:flex; justify-content:center;align-items:center;">
+            <div style="width:40%;">
+                <div style="width:60px; height:60px; background-color:white;border-radius:100%; padding:10px;">
+                    <h2 onclick="location.href = 'mailto:eaxion2022@gmail.com';"
+                        style="font-size:40px; text-align:center; margin-top:12%;" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </h2>
+
+                </div>
+            </div>
+            <div style="width:40%;">
+                <h3 data-aos="fade-up" data-aos-duration="1000" style="color:white; text-align: center;color:#00bcd4;">
+                    Instagram</h3>
+                <br>
+                <p style="color:white; text-align: center; text-transform: lowercase;"><a
+                        style="text-decoration: none; color:white;" target="_blank"
+                        href="https://www.instagram.com/eaxion2k22/" data-aos="fade-up"
+                        data-aos-duration="1000">Eaxion2k22</a>
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    </div>
+    </div>
+    <div style="width: 100%; margin-left:5%;" data-aos="fade-up" data-aos-duration="1000">
+        <iframe width="90%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1944.79526466484!2d80.2183527!3d12.8697029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525bbb618d3ea9%3A0x90b3767be093efaa!2sSt.Joseph's%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1662126044007!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade "><a
+                href="https://www.gps.ie/sport-gps/">fitness
+                tracker</a></iframe>
+        <!--iframe width="90%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=Rajiv%20Gandhi%20Salai,%20Kamaraj%20Nagar,%20Semmancheri,%20Chennai,%20Tamil%20Nadu%20600119+(St%20Joseph's%20Institute%20of%20Technology)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">fitness tracker</a></iframe-->
+
+
+    </div>
+
+
+    <!-- script  -->
+    <script src="./js/mobile_script.js"></script>
+    <!--IONICON SCRIPT TAG-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--AOS ANIMATE SCRIPT-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

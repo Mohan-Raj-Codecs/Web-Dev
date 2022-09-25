@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Eaxion 2k22 - ECE Department Events">
+    <meta name="keywords" content="Eaxion ECE">
+    <meta name="author" content="Eaxion ECE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/icons/icon-mini.png" type="image/icon type">
+    <title>E-Axion</title>
+
+</head>
+
+<body>
+    <!-- Loader Should be Loaded at DOM including styling-->
+    <div id="loader-wrapper"
+        style="width: 100%;  height: 100%;  position: absolute;  top:0;  left:0;  background: radial-gradient(ellipse at bottom, #0c1116 0%, #161927 100%);  display: flex;  justify-content: center;  align-items: center;  transition: all 2s ease;  z-index: 1001;">
+        <div id="preloader"
+            style="background-image: url(&#34;data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' id='preloader' width='240px' height='120px' viewBox='0 0 240 120'%3E%3Cpath id='loop-normal' style='filter: drop-shadow(0px 3px 3px rgb(255, 0, 0)); fill: none; stroke: red; stroke-width: 12;' class='st1' d='M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5 L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z'%3E%3Canimate attributeName='stroke-dasharray' from='500, 50' to='450 50' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3Canimate attributeName='stroke-dashoffset' from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3C/path%3E%3Cpath id='loop-offset' style='display: none;' d='M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z'%3E%3C/path%3E%3Cpath id='socket' style='filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));fill:white;' d='M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z'%3E%3Canimate from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3CanimateMotion dur='2s' repeatCount='indefinite' rotate='auto' keyTimes='0;1' keySplines='0.42, 0.0, 0.58, 1.0'%3E%3Cmpath href='%23loop-offset' /%3E%3C/animateMotion%3E%3C/path%3E%3Cpath id='plug' style='filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));fill:white;' d='M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z'%3E%3Canimate from='-40' to='-540' begin='0s' dur='2s' repeatCount='indefinite' /%3E%3CanimateMotion dur='2s' rotate='auto' repeatCount='indefinite' keyTimes='0;1' keySplines='0.42, 0, 0.58, 1'%3E%3Cmpath href='%23loop-normal' /%3E%3C/animateMotion%3E%3C/path%3E%3C/svg%3E&#34;); position: absolute; width: 240px; height: 120px; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
+        </div>
+        <!-- &#39; as '    &#34; as "  -->
+        <div class="loading" style="position: absolute;  bottom: 60vh;  width: 100%;  text-align: center;">
+            <h1
+                style="filter: drop-shadow(0px 3px 3px rgb(254, 0, 0));  color: white;  font-family: 'Open Sans', sans-serif; text-transform: uppercase; text-decoration: none;">
+                Loading
+            </h1>
+        </div>
+    </div>
+    <!-- Loader END -->
+
+    <canvas id="starfield" width="3000" height="2000"></canvas>
+
+    <div class="bg"></div>
+    <svg stroke="#fff" stroke-linecap="round">
+        <g class="stage">
+            <rect width="100%" height="100%" fill="rgba(0,0,0,0)" stroke="none" />
+        </g>
+        <g class="toggle" style="cursor:pointer;user-select:none;display:none;">
+            <path d="M100,20 118,20" stroke-width="25" />
+            <path class="knob" d="M100,20 100,20" stroke-width="20" stroke="#000" />
+            <text class="txt1" fill="#fff" x="11" y="26">Manual</text>
+            <text class="txt2" fill="#fff" x="144" y="26" opacity="0.3">Auto</text>
+        </g>
+    </svg>
+
+
+    <div class="circle-text">
+        <div class="text">
+            <div class="dot"></div>
+            <p></p>
+        </div>
+    </div>
+
+
+    <!--Nav-Bar-->
+    <header>
+        <nav class="nav-bar">
+            <ul class="menu">
+                <li><a href="./">Home</a></li>
+                <li><a href="./aboutus">About us</a></li>
+                <li><a href="./events">Events</a></li>
+            </ul>
+            <img src="./images/clg-logo.png" style="width: 6%;height:6%;">
+            <div class="logo" style="text-align: center;">
+                <!-- shri26 -->
+                <h6 style="font-style: italic;"><a href="https://www.stjosephstechnology.ac.in/web/index.html">We Make
+                        You Shine</a></h6>
+                <h5 id="clg-name"><a href="https://www.stjosephstechnology.ac.in/web/index.html">St. JOSEPH'S INSTITUTE
+                        OF
+                        TECHNOLOGY</a></h5>
+                <h6><a style="text-align: center;font-family:'Arial Black', 'Arial Bold',Gadget, sans-seri;font-size: 0.9vw;"
+                        href="https://www.stjosephstechnology.ac.in/web/index.html">(An Autonomous Institution)</a></h6>
+                <h6><a style="text-align: center;font-family:'Arial Black';font-size: 1vw;"
+                        href="https://www.stjosephstechnology.ac.in/web/index.html">St. Joseph's Group of
+                        Institutions</a></h6>
+                <h6><a style="text-align: center;font-family:'Arial Black', Gadget, sans-seri;"
+                        href="https://www.stjosephstechnology.ac.in/web/index.html">OMR, Chennai - 600019</a></h6>
+            </div>
+            <img src="./images/years.png" style="width: 6%;height:6%;">
+            <button class="btn contact" onclick="location.href = './aboutus#contactus';">contact
+                us</button>
+        </nav>
+    </header>
+
+    <!--Nav-Bar-->
+
+    <div class="side-two">
+        <div class="circle" style="margin-top: 0%;">
+            <!-- <img style="height: 100px; width: 100px" src=""> -->
+            <img src="./images/Eaxion.png" style="margin-top: 7vh;" alt="">
+
+            <!-- <img style="height: 100px; width: 100px" src=""> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="side-one">
+            <!-- <h2 id="hovering"><span>E</span><span>AXION</span></h2> -->
+            <div class="buttons">
+                <button class="btn skew" onclick="location.href = './events';">EVENT DETAILS</button>
+                <button class="btn skew"
+                    onclick="window.open('https://conoscenza2022.stjosephstechnology.ac.in/registration/registeroriginal.html','_blank'); ">REGISTRATION</button>
+            </div>
+
+
+            <div class="statistics">
+
+                <div class="clock" aria-label="00:00:00 AM">
+                    <div style="position:relative; top:0%">STILL</div>
+                    <div class="clock__block clock__block--delay2" id="days" aria-hidden="true" data-time-group>
+                        <div class="clock__digit-group">
+                            <!-- <div style="font-size: 0.5em;">Days</div> -->
+                            <div class="clock__digits" data-time="a">00</div>
+                            <div class="clock__digits" data-time="b">00</div>
+                        </div>
+                    </div>
+                    <div class="clock__colon"></div>
+                    <div class="clock__block clock__block--delay1" id="hrs" aria-hidden="true" data-time-group>
+                        <div class="clock__digit-group">
+                            <!-- <div style="font-size: 0.5em;">Hrs</div> -->
+                            <div class="clock__digits" data-time="a">00</div>
+                            <div class="clock__digits" data-time="b">00</div>
+                        </div>
+                    </div>
+                    <div class="clock__colon"></div>
+                    <div class="clock__block" aria-hidden="true" id="min" data-time-group>
+                        <div class="clock__digit-group">
+                            <!--<div style="font-size: 0.5em;">Min</div>-->
+                            <div class="clock__digits" data-time="a">00</div>
+                            <div class="clock__digits" data-time="b">00</div>
+                        </div>
+                    </div>
+                    <div class="clock__block clock__block--delay2 clock__block--small" aria-hidden="true"
+                        data-time-group>
+                        <div class="clock__digit-group">
+                            <div class="clock__digits" data-time="a">To</div>
+                            <div class="clock__digits" data-time="b">Go</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="box" id="prize-boxi">
+            <div class="box-body" id="prize-boxi-body">
+                <img id="prize-pool" class="img" src="./images/gift.png">
+                <div class="box-lid" id="boxi-lid">
+                    <div class="box-bowtie" id="boxi-bowtie"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="prize-pool">
+            <p class="prize-para">
+                <ul>
+                <li>First Prize  - ₹3000</li>
+                <li>Second Prize - ₹2000</li>
+                <li>Third Prize  - ₹1000</li>
+                </ul>
+            </p>
+        </div> -->
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+        integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
